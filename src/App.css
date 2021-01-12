@@ -54,3 +54,18 @@
 .font{
   margin: 2%;
 }
+.btn{
+  margin-bottom: 10%;
+  margin-top: 0%;
+  height: 40px;
+  width: 70;
+}
+
+input{
+  width: 0%;
+  
+}
+.btn-icon{
+  
+  padding-bottom: 10px;
+}

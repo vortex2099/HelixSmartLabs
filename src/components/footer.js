@@ -2,7 +2,8 @@ import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBBtn } from "mdbreact";
 import '../App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare, faLinkedin, faInstagram, } from '@fortawesome/free-brands-svg-icons'
+import { faGreaterThan } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -55,9 +56,9 @@ const FooterPage = () => {
                         <h4 class="font-weight-bold">Subscribe to our Newsletter</h4>
                         <p>
                             <div class="input-group">
-                                <input type="text" className="form-control form " maxLength={5} placeholder="Email Address" />
+                                <input type="text" className="form-control form" placeholder="Email Address" />
                                 <span >
-                                    <MDBBtn color="dark"><strong></strong></MDBBtn>
+                                    <MDBBtn className="btn" color="dark"><FontAwesomeIcon className="font btn-icon" icon={faGreaterThan} size="2x" /></MDBBtn>
                                 </span>
                             </div>
                         </p>
