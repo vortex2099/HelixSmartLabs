@@ -11,7 +11,7 @@ import logo from '../assests/IMG-1332.png'
 
 class FooterPage extends Component {
     state = {
-        collapseID: "collapse3"
+        collapseID: ""
     }
 
     toggleCollapse = collapseID => () =>
@@ -36,7 +36,42 @@ class FooterPage extends Component {
             </p>
                             <p className="address">Mobile: +91 9873932539<br />contact@helixsmartlabs.in</p>
                         </MDBCol>
-                        <MDBCol md="2" className="links">
+
+
+                        <MDBCol md="2" className="links lap">
+                            <h4><strong>Products</strong></h4>
+
+                            <ul className="list-unstyled">
+                                <li><a href="#">Air Touch</a></li>
+                            </ul>
+
+                            <h4><strong>Services</strong></h4>
+
+                            <ul class="list-unstyled">
+                                <li><a href="#">IT Solutions</a></li>
+                                <li><a href="#">AI Solutions</a></li>
+                                <li><a href="#">Product Development</a></li>
+
+                            </ul>
+
+                        </MDBCol>
+                        <MDBCol md="2" className="links lap">
+
+
+                            <h4><strong>Quick Links</strong></h4>
+
+                            <ul class="collapse dont-collapse-sm" class="list-unstyled">
+                                <li><a href="#" >About Us</a></li>
+                                <li><a href="#">Get Instant Quote</a></li>
+                                <li><a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </MDBCol>
+
+
+
+                        <MDBCol md="2" className="links phone">
                             <h4><MDBBtn className="btn-collapse" onClick={this.toggleCollapse("collapse3")}><strong>Products</strong></MDBBtn></h4>
                             <MDBCollapse id="collapse3" isOpen={collapseID}>
                                 <ul className="list-unstyled">
@@ -53,7 +88,7 @@ class FooterPage extends Component {
                                 </ul>
                             </MDBCollapse>
                         </MDBCol>
-                        <MDBCol md="2" className="links">
+                        <MDBCol md="2" className="links phone">
 
 
                             <h4><MDBBtn className="btn-collapse" onClick={this.toggleCollapse("collapse1")}><strong>Quick Links</strong></MDBBtn></h4>
@@ -66,6 +101,7 @@ class FooterPage extends Component {
                                 </ul>
                             </MDBCollapse>
                         </MDBCol>
+
                         <MDBCol md="4" className="news shadow-box-example z-depth-1-half">
 
                             <p >Interested in getting updates on our new<br />

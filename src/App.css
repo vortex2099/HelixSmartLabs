@@ -93,4 +93,14 @@ img {
   .foo{
     text-align: center !important;
   }
+  .lap{
+    display: none !important;
+  }
+  .phone{
+  display: block !important ;
+}
+  
+}
+.phone{
+  display: none;
 }
