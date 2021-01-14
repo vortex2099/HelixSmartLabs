@@ -1,4 +1,5 @@
 .Footer{
+  font-family: "Fira Sans";
   padding: 5%;
   background-color: black;
   
@@ -9,6 +10,7 @@
   padding-left: 3%;
   padding-right: 0%;
   margin: 1%;
+  align-items: center;
 }
 .borde{
   border-bottom-style: solid;
@@ -85,8 +87,10 @@ img {
 }
 
 .btn-collapse{
-  background-color: black !important;
+  background-color:  rgb(41, 40, 40) !important;
   padding: 0%;
+  margin: 0%;
+  width: 100%;
   
 }
 @media screen and (max-width:480px){
@@ -99,8 +103,98 @@ img {
   .phone{
   display: block !important ;
 }
+.list-unstyled{
+  background-color:rgb(41, 40, 40) ;
+}
+.work-row1{
+  font-size: 15px !important;
+
+}
+.work-row2{
+  font-size: 40px !important;
+}
   
 }
 .phone{
   display: none;
 }
+.box{
+  background-color: black;
+  color: white;
+  padding-bottom: 5%;
+}
+.cont{
+  align-items: center;
+}
+.work-row1{
+  font-size: 25px;
+  text-align: center;
+  font-family: Marcellus;
+  align-items: center;
+  margin-bottom: 0%;
+  padding: 0%;
+  padding-top: 10% !important;
+  
+  
+
+}
+.line{
+  background-color: #efefef; 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 0px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 50px;
+}
+.work-row2{
+  font-size: 72px;
+
+  font-family: Fira Sans;
+  text-align: center;
+  align-items: center;
+}
+.work-icon{
+  
+  padding: 1%;
+  padding-bottom: 0px !important;
+ 
+
+}
+.work-button{
+  background-color: rgb(54, 53, 53) !important;
+  font-family: Marcellus !important;
+  text-transform: none !important;
+  font-size:1.1rem;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 1% !important;
+  padding-bottom: 2% !important;
+  width: 100%;
+  text-align: left;
+}
+.mbd-collapse{
+  background-color: rgb(54, 53, 53) !important;
+  width: 100%;
+  text-align: center;
+  font-family: Marcellus !important;
+  padding: 0%;
+  margin: 0%;
+}
+.quote-box{
+  background-color: white;
+  align-items: center;
+  text-align: center;
+}
+.quote-btn{
+  background-color: #34B6DD !important;
+}
+.quote-span{
+  padding-bottom: 5px;
+  text-size-adjust: justify;
+  text-align: center;
+}
+
+

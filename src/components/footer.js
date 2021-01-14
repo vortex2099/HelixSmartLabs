@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { MDBCollapseHeader } from 'mdbreact'
-import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBBtn, MDBCollapse } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBBtn, MDBCollapse, MDBIcon } from "mdbreact";
 import '../App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faLinkedin, faInstagram, } from '@fortawesome/free-brands-svg-icons'
@@ -41,13 +40,13 @@ class FooterPage extends Component {
                         <MDBCol md="2" className="links lap">
                             <h4><strong>Products</strong></h4>
 
-                            <ul className="list-unstyled">
+                            <ul className="list-unstyled ">
                                 <li><a href="#">Air Touch</a></li>
                             </ul>
 
                             <h4><strong>Services</strong></h4>
 
-                            <ul class="list-unstyled">
+                            <ul class="list-unstyled ">
                                 <li><a href="#">IT Solutions</a></li>
                                 <li><a href="#">AI Solutions</a></li>
                                 <li><a href="#">Product Development</a></li>
@@ -72,13 +71,17 @@ class FooterPage extends Component {
 
 
                         <MDBCol md="2" className="links phone">
-                            <h4><MDBBtn className="btn-collapse" onClick={this.toggleCollapse("collapse3")}><strong>Products</strong></MDBBtn></h4>
+                            <h4><MDBBtn className="btn-collapse" onClick={this.toggleCollapse("collapse3")}><strong> <MDBIcon className="work-icon" size="1.1x"
+                                icon={collapseID === 'collapse3' ? 'angle-down' : 'angle-right'}
+                            /> Products</strong></MDBBtn></h4>
                             <MDBCollapse id="collapse3" isOpen={collapseID}>
                                 <ul className="list-unstyled">
                                     <li><a href="#">Air Touch</a></li>
                                 </ul>
                             </MDBCollapse>
-                            <h4><MDBBtn className="btn-collapse" onClick={this.toggleCollapse("collapse2")}><strong>Services</strong></MDBBtn></h4>
+                            <h4><MDBBtn className="btn-collapse" onClick={this.toggleCollapse("collapse2")}><strong> <MDBIcon className="work-icon" size="1.1x"
+                                icon={collapseID === 'collapse2' ? 'angle-down' : 'angle-right'}
+                            /> Services</strong></MDBBtn></h4>
                             <MDBCollapse id="collapse2" isOpen={collapseID}>
                                 <ul class="list-unstyled">
                                     <li><a href="#">IT Solutions</a></li>
@@ -91,7 +94,9 @@ class FooterPage extends Component {
                         <MDBCol md="2" className="links phone">
 
 
-                            <h4><MDBBtn className="btn-collapse" onClick={this.toggleCollapse("collapse1")}><strong>Quick Links</strong></MDBBtn></h4>
+                            <h4><MDBBtn className="btn-collapse" onClick={this.toggleCollapse("collapse1")}><strong><MDBIcon className="work-icon" size="1.1x"
+                                icon={collapseID === 'collapse1' ? 'angle-down' : 'angle-right'}
+                            /> Quick Links</strong></MDBBtn></h4>
                             <MDBCollapse id="collapse1" isOpen={collapseID}>
                                 <ul class="collapse dont-collapse-sm" class="list-unstyled">
                                     <li><a href="#" >About Us</a></li>
