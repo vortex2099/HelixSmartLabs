@@ -196,5 +196,31 @@ img {
   text-size-adjust: justify;
   text-align: center;
 }
+.feature-img-col{
+  background-color: rgb(49, 49, 49);
+  padding: 1%;
+}
+.feature-btn-col{
+  align-items: center;
+  margin-top: 10%;
+  text-align: center;
+}
+.feature-btn{
+  background-color: #34B6DD !important;
+  text-align: center;
+}
+.feature-btn-text{
+  padding-bottom: 5% !important;
+  text-align: center;
+}
+.feature-img-row{
+  margin-top: 5%;
+}
+.feature-box{
+  margin: 0%;
+  background-color: black;
+  color: white;
+  padding: 0%;
+}
 
 
